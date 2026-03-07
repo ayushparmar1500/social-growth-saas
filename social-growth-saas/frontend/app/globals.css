@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  background-image: radial-gradient(circle at top, rgba(37, 99, 235, 0.25), transparent 55%),
+    radial-gradient(circle at bottom, rgba(56, 189, 248, 0.12), transparent 60%);
+}
+
+.glass {
+  @apply bg-slate-900/60 backdrop-blur-xl border border-slate-700/60 shadow-glass rounded-2xl;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-sky-500 px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-blue-500/30 transition hover:shadow-blue-500/50 hover:brightness-110 active:scale-[0.98];
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-full border border-slate-600/80 bg-slate-900/60 px-5 py-2.5 text-sm font-medium text-slate-100 shadow-sm transition hover:border-blue-500/80 hover:text-blue-100;
+}
+
+.nav-link {
+  @apply text-sm font-medium text-slate-300/90 hover:text-white transition;
+}
+
+.page-shell {
+  @apply min-h-screen flex flex-col;
+}
+
+.page-main {
+  @apply flex-1 flex flex-col;
+}
+
