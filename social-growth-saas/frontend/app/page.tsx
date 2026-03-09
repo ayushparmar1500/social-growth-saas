@@ -21,7 +21,7 @@ const categories = [
     description: "Watch‑time, views and engagement to push your content to the algorithm.",
   },
 ];
-
+export const dynamic = "force-dynamic";
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-12">
